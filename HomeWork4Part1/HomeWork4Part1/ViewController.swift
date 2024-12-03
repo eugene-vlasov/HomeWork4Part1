@@ -9,11 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var button: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        label.text = "Some random text"
     }
 
 
+    @IBAction func changeText(_ sender: UIButton) {
+        label.text = "New random text"
+    }
 }
 
